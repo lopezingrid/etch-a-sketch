@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <h1>Etch-a-Sketch</h1>
+    <div id="bodyWrapper">
+        <div class="left">
+            <!--<div id="buttonsGrid"> -->
+                <button id="clean">Clean up</button>
+                <button id="eraser">Eraser</button>
+                <button id="black">Black</button>
+                <button id="randomColor">Random color</button>
+            <!-- </div> -->
+            <!-- <div id="slideContainer"> -->
+                <input type="range" class="slider" id="gridSlider" min="1" max="100" value="16">
+                <p>Size: <span id="demo"></span></p>
+            <!-- </div> -->
+        </div>
+
+        <div class="right">
+            <div id="grid"></div>
+        </div>
+    </div>
+
+    <script src="scripts/script.js" defer></script>
+</body>
+</html>
