@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    background-color: rgb(255, 231, 164);
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 55px;
+}
+
+#bodyWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 100px;
+    margin-top: 50px;
+}
+
+#buttonsGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.left {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 200px;
+    gap: 15px;
+    font-size: 20px;
+}
+
+button {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 20px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: rgb(255, 239, 239);
+    transform: scale(1.03);
+}
+
+
+.slider {
+    margin-top: 25px;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 10px;
+    border-radius: 5px;
+    background: #ffffff;
+    border: 1px solid gray;
+}
+
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: rgb(255, 129, 129);
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: rgb(49, 182, 206);
+    cursor: pointer;
+}
+
+#grid {
+    background-color: white;
+    border: none;
+    width: 450px;
+    height: 450px; 
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    box-shadow: 0 0 10px rgb(146, 146, 146);
+}
+
+.divGrid {
+    float: left;
+}
+
+
